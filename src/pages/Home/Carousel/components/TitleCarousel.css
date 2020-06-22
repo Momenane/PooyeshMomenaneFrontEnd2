@@ -1,0 +1,31 @@
+.titleCarouselContainer {
+  position: relative;
+  min-width: 289.33px;
+  height: 46px;
+}
+.titleCarousel {
+  position: absolute;
+  top: 1rem;
+  right: 20px;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  text-align: center;
+  color: #fff;
+  font-family: iranyekan;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+}
+
+.iconTitleCarousel {
+  position: absolute;
+  width: 1.25rem;
+  height: 1.25rem;
+  right: 4rem;
+  top: 1.3rem;
+  color: #fff;
+  font-family: IRANSans;
+  margin: 0;
+  padding: 0;
+}

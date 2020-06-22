@@ -1,0 +1,60 @@
+@import "bootstrap-grid.css";
+@import "fonts.css";
+
+:root {
+  --primary-color: #004182;
+  --gray-color: #c9d5dc;
+  --white-color: #fff;
+}
+
+body {
+  font-family: IRANSans "Arial Narrow Bold", sans-serif !important;
+  direction: rtl;
+  margin: 0;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+button {
+  display: inline-block;
+  text-align: center;
+  font-family: IRANSans;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  border: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-family: IRANSans !important;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+input,
+textarea {
+  margin: 0;
+  margin-top: 0.75rem;
+  border: 0;
+  padding: 0;
+  display: inline-block;
+  vertical-align: middle;
+  white-space: normal;
+  line-height: 1;
+  text-indent: 0.75rem;
+  font-family: IRANSans !important;
+}
+
+input:focus,
+button:focus {
+  outline: 0;
+}

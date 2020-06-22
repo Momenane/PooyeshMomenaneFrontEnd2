@@ -1,0 +1,16 @@
+.cardBottomDescription h4,
+.cardBottomDate h4,
+.cardBottomVolunteersTeam h4 {
+  color: #fff;
+  font-size: 15px;
+  margin: 9px;
+}
+.cardBottomDescription p,
+.cardBottomDate p {
+  font-size: 11px;
+}
+
+.cardBottomVolunteersTeam p {
+  font-size: 14px;
+  font-weight: bold;
+}

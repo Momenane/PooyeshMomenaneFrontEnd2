@@ -1,0 +1,10 @@
+.btn-contact {
+  min-width: 13.9375rem;
+  min-height: 1.5625rem;
+  border-radius: 15px;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  margin-top: 0.75rem;
+  font-size: 9px;
+  font-weight: bold;
+}

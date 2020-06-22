@@ -1,0 +1,38 @@
+.needy-Title,
+.volunteer-Title {
+  text-align: center;
+  font-family: IRANSans;
+  margin-bottom: 50px;
+  color: var(--primary-color);
+}
+.needy-subTitle,
+.volunteer-subTitle {
+  text-align: center;
+  font-family: IRANSans;
+  color: var(--primary-color);
+}
+
+.needy-textareaWhatNeed,
+.volunteer-textareaWhatNeed {
+  background-color: transparent;
+  margin-right: auto;
+  margin-left: auto;
+  display: inline-block;
+  border: 2px solid rgb(201, 198, 198);
+  border-radius: 6px;
+  padding-top: 20px;
+  padding: 10px;
+  width: 500px;
+}
+.needy-textareaWhatNeed:focus,
+.volunteer-textareaWhatNeed:focus {
+  outline: none;
+}
+@media only screen and (max-width: 480px) {
+  .needy-textareaWhatNeed,
+  .volunteer-textareaWhatNeed {
+    width: 380px !important;
+    display: block;
+    margin: 30px;
+  }
+}

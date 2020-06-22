@@ -1,0 +1,14 @@
+.coronaGradientBg {
+  background: linear-gradient(
+    to right,
+    #004182 0,
+    #00418244 40%,
+    #00418233 50%,
+    #00418222 60%,
+    #00418221 70%,
+    transparent
+  );
+  width: 130px;
+  height: 53px;
+  opacity: 0.2;
+}

@@ -1,0 +1,17 @@
+.footer-ourContactTextArea {
+  display: inline-block;
+  min-width: 13.9375rem;
+  border-radius: 15px;
+  padding: 0.3rem;
+  border: 0;
+  font-family: IRANSans !important;
+  font-size: 10px;
+  font-weight: bold;
+  background-color: var(--gray-color);
+  color: var(--primary-color);
+  margin-top: 0.7rem;
+  resize: none;
+}
+.footer-ourContactTextArea:focus {
+  outline: none;
+}

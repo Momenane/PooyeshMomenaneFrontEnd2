@@ -1,0 +1,15 @@
+.InputForm {
+  font-family: IRANSans;
+  border-radius: 4px;
+  display: inline-block;
+  width: 100%;
+  border: 1px solid rgba(0, 65, 160, 0.5);
+  padding: 14px 5px;
+  background-color: transparent;
+  margin: 0;
+}
+
+.InputForm:focus {
+  outline: none;
+  border: 1px solid var(--primary-color);
+}

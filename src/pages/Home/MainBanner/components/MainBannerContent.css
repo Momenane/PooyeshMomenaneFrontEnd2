@@ -1,0 +1,35 @@
+.imgPepole {
+  width: 100%;
+  height: 100%;
+  margin-top: -2.5px;
+}
+@media only screen and (max-width: 820px) {
+  .imgPepole {
+    width: 100%;
+    height: 100%;
+    margin-top: -1.25rem;
+  }
+}
+.mainbannerH1 {
+  font-family: IRANSans;
+  font-size: 3.3125rem;
+  font-weight: bold;
+  color: var(--primary-color);
+  padding-top: 3.125rem;
+  text-align: right;
+}
+
+@media only screen and (max-width: 820px) {
+  .mainbannerH1 {
+    font-size: 2.8125rem;
+    text-align: center;
+  }
+}
+.mainbannerH4 {
+  font-family: IRANSans;
+  font-size: 1.15625rem;
+  font-weight: bold;
+  color: var(--primary-color);
+  width: 19.375rem;
+  text-align: center;
+}

@@ -1,0 +1,13 @@
+.title-helpPanel {
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+.panel-helpH3 {
+  position: absolute;
+  top: 25px;
+  padding: 0px 0px 0px 15px;
+  margin: 0;
+  background-color: white;
+  font-family: IRANSans;
+}

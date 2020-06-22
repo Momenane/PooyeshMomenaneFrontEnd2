@@ -1,0 +1,16 @@
+.ourContactInput {
+  display: inline-block;
+  min-width: 13.9375rem;
+  min-height: 1.5625rem;
+  border-radius: 15px;
+  padding: 0.3rem;
+  border: 0;
+  font-size: 10px;
+  font-weight: bold;
+  background-color: var(--gray-color);
+  color: var(--primary-color);
+}
+
+.ourContactInput:focus {
+  outline: none;
+}

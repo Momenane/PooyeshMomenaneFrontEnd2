@@ -1,0 +1,22 @@
+.authCode {
+  font-family: IRANSans;
+  margin: 5px;
+  text-align: center;
+}
+
+.authSMSCode-btnDesc {
+  border-bottom: 4px dashed #7f7f7f7f;
+  width: 350px;
+  padding: 10px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 15px;
+  font-family: IRANSans;
+  text-align: center;
+}
+
+.authSMSCode-btnContainer {
+  width: 280px;
+  margin-right: auto;
+  margin-left: auto;
+}

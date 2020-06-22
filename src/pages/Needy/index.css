@@ -1,0 +1,11 @@
+.needy-Title {
+  text-align: center;
+  font-family: IRANSans;
+  margin-bottom: 50px;
+  color: var(--primary-color);
+}
+.needy-subTitle {
+  text-align: center;
+  font-family: IRANSans;
+  color: var(--primary-color);
+}

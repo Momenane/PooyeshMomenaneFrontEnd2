@@ -1,0 +1,28 @@
+{
+  "footer": {
+    "contactInfo": "ارتباط با ما",
+    "phoneProperty": "شمـــاره تــلـفن  : ",
+    "phoneValue": "77234567",
+    "addressProperty": "آدرس دفتر مرکزی : ",
+    "addressValue": "تهران - نارمک -خیابان آیت چهارراه تلفن خانه - مسجد فاطـمه الـزهرا (ص)",
+    "emailProperty": "ایمیل : ",
+    "emailValue": "komakmomenane@gmail.com",
+    "aboutUs": "درباره ما",
+    "aboutUsParagraph": "وب سایت کمک مومنانه به جهت ایجاد بستــری بــرای هـمـبسـتگی مــلــی در تامــین درخــواسـت  نـیــازمنـدان تــــاســیـس شــده اســـت",
+    "contactUs": "تماس با ما",
+    "formPlaceHolderName": "نام",
+    "formPlaceHolderEmail": "ایمیل",
+    "formPlaceHolderDescription": "توضیحات",
+    "formbuttonSend": "ارسال"
+  },
+  "mainBanner": {
+    "logoname": "مومنانه",
+    "h1Tag": "همدلی مومنانه",
+    "h4Subtitle": "وبسایتی برای همبستگی گروه های جـهادی در جـهت تـامــیـن درخـواست  نـیازمندان",
+    "volunteersBtn": "افزودن گروه جهادی",
+    "needyBtn": "افزودن نیازمند",
+    "h2Corona": "کمپین کـرونـا",
+    "moreBtn": "بیشتر بدانید",
+    "pCorona": "فعالیت هماهنگ گروه های جهادی در جهت مقابله و ریشه کن کردن ویروس کرونا"
+  }
+}

@@ -1,0 +1,23 @@
+.btn-link {
+  font-family: IRANSans;
+  min-width: 18rem;
+  min-height: 3.0625rem;
+  font-weight: bold;
+  background: linear-gradient(to right, #00418280, transparent);
+  background-color: #108fd8;
+  color: var(--white-color);
+  border-radius: 6px;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  padding-top: 0.75rem;
+  margin-top: 20px;
+}
+.LinkBtn-icon {
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  right: 0.75rem;
+  top: 0.9rem;
+}

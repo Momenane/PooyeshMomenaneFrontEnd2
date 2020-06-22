@@ -1,0 +1,41 @@
+.bg-form {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+.puzzle1 {
+  position: absolute;
+  bottom: 10%;
+  right: 4%;
+  z-index: -3;
+  width: 300px;
+}
+
+.puzzle2 {
+  position: absolute;
+  bottom: -15%;
+  right: 15%;
+  width: 300px;
+  z-index: -1;
+}
+
+.puzzle3 {
+  position: absolute;
+  left: -15%;
+  top: 3%;
+  width: 300px;
+  z-index: -1;
+}
+
+.puzzle4 {
+  position: absolute;
+  right: 20%;
+  top: 0;
+  z-index: 10;
+  width: 200px;
+  z-index: -1;
+}

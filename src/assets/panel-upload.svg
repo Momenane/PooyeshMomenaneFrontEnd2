@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="150" height="150" viewBox="0 0 150 150">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="0.238" stop-color="#ececfc"/>
+      <stop offset="0.5" stop-color="#f1f1fd"/>
+      <stop offset="1" stop-color="#a2a2f2"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_127" data-name="Group 127" transform="translate(-2298 -1080)">
+    <circle id="Ellipse_8" data-name="Ellipse 8" cx="75" cy="75" r="75" transform="translate(2298 1080)" fill="url(#linear-gradient)"/>
+    <text id="محل_آپلود_عکس" data-name="محل آپلود عکس" transform="translate(2440 1157)" fill="#1638c2" font-size="20" font-family="IRANSansMobile"><tspan x="-132.957" y="0">محل آپلود عکس</tspan></text>
+  </g>
+</svg>

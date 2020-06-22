@@ -1,0 +1,21 @@
+.footer-aboutUsParagraph {
+  font-size: 13px;
+  font-weight: bold;
+  color: var(--primary-color);
+  font-family: IRANSans !important;
+  text-align: center;
+  width: 17.5rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.footer-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.footerMarginTop {
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+}

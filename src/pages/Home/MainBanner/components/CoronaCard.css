@@ -1,0 +1,128 @@
+.cardContainer {
+  position: relative;
+  bottom: -60px;
+  overflow: hidden;
+  height: 159px;
+  width: 905px;
+  border-radius: 16px;
+  background-color: white;
+  left: 0;
+  right: 150px;
+  margin: auto;
+}
+@media (max-width: 820px) {
+  .cardContainer {
+    bottom: -170px;
+    height: 200px;
+    width: 650px;
+    right: 3%;
+    margin: auto;
+  }
+}
+@media (max-width: 480px) {
+  .cardContainer {
+    height: 300px;
+    width: 300px;
+    right: 10%;
+    bottom: -40px;
+  }
+}
+
+.dash-card {
+  border: 2.5px dashed var(--primary-color);
+  margin: 10px;
+  height: 145px;
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
+  border-left-color: transparent;
+  opacity: 0.2;
+}
+
+@media (max-width: 820px) {
+  .dash-card {
+    height: 180px;
+  }
+}
+@media (max-width: 480px) {
+  .dash-card {
+    height: 290px;
+  }
+}
+
+.coronaTitle-card {
+  position: absolute;
+  top: 0;
+  right: 60px;
+  font-family: IRANSans;
+  color: var(--primary-color);
+  font-size: 32px;
+}
+.coronaDesc-card {
+  position: absolute;
+  top: 70px;
+  right: 60px;
+  font-family: IRANSans;
+  color: var(--primary-color);
+  font-size: 14px;
+}
+
+@media (max-width: 820px) {
+  .coronaTitle-card {
+    font-size: 26px;
+  }
+  .coronaDesc-card {
+    font-size: 12px;
+  }
+}
+@media (max-width: 480px) {
+  .coronaTitle-card {
+    font-size: 24px;
+    top: 15;
+  }
+  .coronaDesc-card {
+    font-size: 12px;
+    top: 85px;
+  }
+}
+
+.coronaVolunteerBg {
+  float: left;
+  border-radius: 16;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.btn-outline {
+  position: absolute;
+  top: 80px;
+  left: 212px;
+  font-weight: bold;
+  min-width: 7.625rem;
+  min-height: 1.9375rem;
+  font-size: 12px !important;
+  border: 1.5px solid var(--primary-color) !important;
+  border-radius: 6px;
+  text-decoration: none;
+  padding: 0.375rem 0.75rem;
+  color: var(--primary-color);
+  text-align: center;
+  font-family: IRANSans;
+  width: 150px;
+}
+
+@media (max-width: 820px) {
+  .btn-outline {
+    top: 120px;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+}
+@media (max-width: 480px) {
+  .btn-outline {
+    top: 190px;
+    left: 40px;
+  }
+}
