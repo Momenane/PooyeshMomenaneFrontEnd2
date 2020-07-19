@@ -51,3 +51,13 @@
   border-radius: 16px;
   background-color: transparent;
 }
+
+.mainBannerSignup {
+  text-decoration: none;
+  color: white;
+  font-family: IRANSans;
+  background-color: var(--primary-color);
+  display: inline-block;
+  border-radius: 6px;
+  padding: 4px 10px;
+}
