@@ -1,6 +1,7 @@
 import React from "react";
 import "./Navbar.css";
 import { FaSearch, FaBars } from "react-icons/fa";
+import auth from '../../../services/UserServiceRegister'
 import GetDate from "./GetDate";
 
 const Navbar = (props) => {
@@ -22,6 +23,14 @@ const Navbar = (props) => {
         </li>
         <li style={{ listStyle: "none", width:300 }}>
           <GetDate />
+        </li>
+        <li style={{ listStyle: "none", width:150 }}>
+         <button           onClick={() => {
+            auth.logout();
+           window.location = "/";
+          }}> 
+          خروج
+         </button>
         </li>
       </ul>
     </nav>
