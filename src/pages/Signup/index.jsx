@@ -48,14 +48,17 @@ export default (props) => {
   if(signPassword.trim() ===signRePassword.trim()){
     try {
       console.log('bodyData',bodyData);
-      await auth.register(bodyData);
+      const data= await auth.register(bodyData);
+       console.log(data)
+      const log= await auth.login({username:signName,password:signPassword});
+        console.log('login',log);
 
-      const { state } = props.location;
-      window.location = state ? state.from.pathname : "/panel/poorslist";
+      // const { state } = props.location;
+      // window.location = state ? state.from.pathname : "/panel/poorslist";
     } catch (ex) {
       console.log(ex.response);
       if (ex.response && ex.response.status === 400) {
-        console.log(ex.response);
+        console.log('signup',ex.response);
         // toast.error("excepted error error 400");
       }
     }
