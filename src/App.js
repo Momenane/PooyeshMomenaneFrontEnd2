@@ -7,14 +7,22 @@ import Volunteer from "./pages/Volunteer";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import Panel from "./pages/Panel";
+import PrivateRoute from "./components/PrivateRoute";
 
-function App() {
+
+
+function App(props) {
   return (
     <>
       <Switch>
+        <PrivateRoute
+          path="/panel"
+          userToken={false}
+          {...props}
+          component={Panel}
+          />
         <Route  path="/login" component={Login} />
         <Route  path="/signup" component={Signup} />
-        <Route  path="/panel" component={Panel}/>
         <Route path="/needy" component={Needy}/>
         <Route path="/volunteer" component={Volunteer}/>
         <Route exact path="/" component={Home} />
