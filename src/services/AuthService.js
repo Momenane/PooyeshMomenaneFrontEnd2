@@ -1,12 +1,12 @@
 import http from './httpService';
 import config from "../config.json";
 
-const apiEndpoint = config.apiURl + "user";
+const apiEndpoint = config.apiURl ;
 const tokenKey = "token";
 
 export async function register(bodyData) {
-  const { data } = await http.post(
-    apiEndpoint,
+  const  data  = await http.post(
+    apiEndpoint+ "user",
      bodyData ,
     {
       headers: {
@@ -17,6 +17,21 @@ export async function register(bodyData) {
   );
   return data
 }
+
+export async function login(bodyData) {
+  const  data  = await http.post(
+    apiEndpoint+ "login",
+     bodyData ,
+    {
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+      },
+    }
+  );
+  return data
+}
+
 
 export function logout() {
   localStorage.removeItem(tokenKey);
