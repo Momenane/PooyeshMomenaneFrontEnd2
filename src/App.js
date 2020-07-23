@@ -1,6 +1,7 @@
-import React from "react";
+import React,{useState} from "react";
 import { Route, Switch } from "react-router-dom";
-import { ToastContainer } from "react-toastify";
+import auth from './services/AuthService'
+// import { ToastContainer } from "react-toastify";
 import Home from "./pages/Home";
 import Needy from "./pages/Needy";
 import Volunteer from "./pages/Volunteer";
@@ -12,12 +13,13 @@ import PrivateRoute from "./components/PrivateRoute";
 
 
 function App(props) {
+const [userToken] = useState(auth.getToken())
   return (
     <>
       <Switch>
         <PrivateRoute
           path="/panel"
-          userToken={false}
+          userToken={userToken}
           {...props}
           component={Panel}
           />
