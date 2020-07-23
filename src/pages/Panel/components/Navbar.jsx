@@ -1,7 +1,7 @@
 import React from "react";
 import "./Navbar.css";
 import { FaSearch, FaBars } from "react-icons/fa";
-import auth from '../../../services/UserServiceRegister'
+import auth from '../../../services/AuthService'
 import GetDate from "./GetDate";
 
 const Navbar = (props) => {

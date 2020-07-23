@@ -1,6 +1,6 @@
 import React ,{useState}from "react";
 import SignForm from "./SignForm";
-import uRegister from '../../services/UserServiceRegister'
+import auth from '../../services/AuthService'
 import signBg from '../../assets/sign-login-bg.svg'
 import './index.css'
 
@@ -48,7 +48,7 @@ export default (props) => {
   if(signPassword.trim() ===signRePassword.trim()){
     try {
       console.log('bodyData',bodyData);
-      await uRegister.register(bodyData);
+      await auth.register(bodyData);
 
       const { state } = props.location;
       window.location = state ? state.from.pathname : "/panel/poorslist";
