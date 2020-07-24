@@ -14,8 +14,15 @@ axios.interceptors.response.use(null, (error) => {
   return Promise.reject(error);
 });
 
+function setJwt(jwt) {
+  axios.defaults.headers.common["Authorization"] = jwt;
+  axios.defaults.headers.post["Content-Type"] =
+    "application/x-www-form-urlencoded";
+}
+
 export default {
   get: axios.get,
   post: axios.post,
   put: axios.put,
+  setJwt
 };
