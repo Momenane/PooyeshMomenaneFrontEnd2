@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 import signBg from '../../assets/sign-login-bg.svg'
 import LoginForm from "./LoginForm";
+import auth from '../../services/AuthService'
 
 import './index.css'
 
@@ -23,6 +24,32 @@ export default (props) => {
   };
 
 
+  const doSubmit = async () => {
+
+    const bodyData= {
+      username: loginZipCode,
+      password: loginPassword,
+    }
+
+    try {
+      await auth.login(bodyData)
+     
+      const { state } = props.location;
+      window.location = state ? state.from.pathname : "/panel/poorslist";
+    } catch (ex) {
+      console.log('login',ex.response);
+      if (ex.response && ex.response.status === 400) {
+        console.log('excepted error error 400',ex.response);
+        // toast.error("excepted error error 400");
+      }
+    }
+  };
+
+const handleSubmit = (e) => {
+    e.preventDefault();
+   doSubmit();
+  };
+
 
   return (
     <>
@@ -32,8 +59,8 @@ export default (props) => {
         loginZipCode={loginZipCode}
         loginPassword={loginPassword}
         onChange={onChangeHandler}
+        onSubmit={handleSubmit}
       />
-      <Link to="/panel/poorslist"> ورود به پنل تست</Link>
       </div>
       <div className="col-md-6 p-0 d-none d-md-block">
         <img style={{height:'100%',display:'inline-block',float:"left"}} src={signBg} alt=""/>
