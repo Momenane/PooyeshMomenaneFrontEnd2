@@ -39,8 +39,9 @@ export default (props) => {
   };
 
   const doSubmit = async () => {
+
     const bodyData= {
-      username: signName,
+      username: signUserName,
       firstName: signName,
       lastName: signLastname,
       password: signPassword,
@@ -50,22 +51,18 @@ export default (props) => {
     
   if(signPassword.trim() ===signRePassword.trim()){
     try {
-      console.log('bodyData',bodyData);
-      console.log (auth.getToken())
-      const data= await auth.register(bodyData);
-       console.log(data)
-      const log= await auth.login({username:signName,password:signPassword});
-        console.log('login',log);
-
-      // const { state } = props.location;
-      // window.location = state ? state.from.pathname : "/panel/poorslist";
+      await auth.register(bodyData)
+     
+      const { state } = props.location;
+      window.location = state ? state.from.pathname : "/panel/poorslist";
     } catch (ex) {
-      console.log(ex.response);
+      console.log('signup',ex.response);
       if (ex.response && ex.response.status === 400) {
-        console.log('signup',ex.response);
+        console.log('excepted error error 400',ex.response);
         // toast.error("excepted error error 400");
       }
     }
+
   }else{
     console.log('password and repassword not correct')
   }
