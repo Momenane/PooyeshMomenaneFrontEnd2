@@ -4,6 +4,8 @@ import config from "../config.json";
 const apiEndpoint = config.apiURl ;
 const tokenKey = "token";
 
+
+http.setJwt(getJwt());
 export async function register(bodyData) {
   const  data  = await http.post(
     apiEndpoint+ "user",
@@ -32,18 +34,23 @@ export async function login(bodyData) {
   return data
 }
 
+export function loginWithJwt(jwt) {
+  localStorage.setItem(tokenKey, jwt);
+}
 
 export function logout() {
   localStorage.removeItem(tokenKey);
 }
 
-export function getToken() {
+export function getJwt() {
   return localStorage.getItem(tokenKey);
 }
 
 
 export default {
   register,
+  login,
   logout,
-  getToken
+  getJwt,
+  loginWithJwt
 };
