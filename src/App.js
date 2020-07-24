@@ -13,7 +13,7 @@ import PrivateRoute from "./components/PrivateRoute";
 
 
 function App(props) {
-const [userToken] = useState(auth.getToken())
+const [userToken] = useState(auth.getJwt())
   return (
     <>
       <Switch>
