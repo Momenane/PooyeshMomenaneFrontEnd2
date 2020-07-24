@@ -17,6 +17,15 @@ const SignForm = (props) => {
     }}
     >
     <h2 style={{fontFamily:"IRANSans",fontWeight:"bold",marginBottom:30,fontSize:'20px'}}>  ایجاد حساب کار بری</h2>
+    <div className="col-md-8 col-sm-12  m-0 p-1">
+      <InputForm
+        onChange={props.onChange}
+        placeholder="نام کاربری"
+        name="signUserName"
+        value={props.signUserName}
+
+      />
+    </div>
     <div className="col-md-8 col-sm-12 m-0 p-1">
       <div className="d-flex justify-content-between ">
         <div className="col-6 p-1">

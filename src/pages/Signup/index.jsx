@@ -13,6 +13,7 @@ export default (props) => {
   const [signZipCode,setSignZipCode] = useState("")
   const [signPhoneNumber, setSignPhoneNumber] = useState("")
   const [signEmail, setSignEmail] = useState("")
+  const [signUserName, setSignUserName] = useState("")
   const [signPassword, setSignPassword] = useState("")
   const [signRePassword, setSignRePassword] = useState("")
   
@@ -30,6 +31,8 @@ export default (props) => {
       setSignEmail(value);
     } else if (name === "signPassword") {
       setSignPassword(value);
+    }else if (name === "signUserName") {
+      setSignUserName(value);
     }else {
       setSignRePassword(value);
     }
@@ -48,6 +51,7 @@ export default (props) => {
   if(signPassword.trim() ===signRePassword.trim()){
     try {
       console.log('bodyData',bodyData);
+      console.log (auth.getToken())
       const data= await auth.register(bodyData);
        console.log(data)
       const log= await auth.login({username:signName,password:signPassword});
@@ -79,6 +83,7 @@ export default (props) => {
       <SignForm
       onSubmit={handleSubmit}
       signName={signName}
+      signUserName={signUserName}
       signLastname={signLastname}
       signZipCode={signZipCode}
       signPhoneNumber={signPhoneNumber}
