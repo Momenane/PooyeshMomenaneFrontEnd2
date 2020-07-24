@@ -7,7 +7,7 @@ const tokenKey = "token";
 
 http.setJwt(getJwt());
 export async function register(bodyData) {
-  const  data  = await http.post(
+  const  {data}  = await http.post(
     apiEndpoint+ "user",
      bodyData ,
     {
@@ -17,11 +17,13 @@ export async function register(bodyData) {
       },
     }
   );
-  return data
+  let jwt = data.token;
+
+  localStorage.setItem(tokenKey, jwt);
 }
 
 export async function login(bodyData) {
-  const  data  = await http.post(
+  const  {data}  = await http.post(
     apiEndpoint+ "login",
      bodyData ,
     {
@@ -31,7 +33,8 @@ export async function login(bodyData) {
       },
     }
   );
-  return data
+  let jwt = data.token;
+  localStorage.setItem(tokenKey, jwt);
 }
 
 export function loginWithJwt(jwt) {
