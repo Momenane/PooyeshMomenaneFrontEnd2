@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom'
 const LoginForm = (props) => {
   return (
     <form
+    onSubmit={props.onSubmit}
     style={{
       display: "flex",
       flexDirection: "column",
