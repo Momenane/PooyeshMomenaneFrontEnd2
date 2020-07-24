@@ -7,7 +7,7 @@ import './MainBannerContent.css'
 const MainBannerContent = () => {
   return (
     <div className="row m-0 p-0" style={{flexDirection:'row-reverse'}}>
-    <div className="col-md-6 col-sm-12 m-0 p-0 d-none d-md-block"  >
+    <div className="col-md-6 col-sm-12 m-0 p-0 d-none d-md-block pl-5"   >
       <img src={group} alt="bg-pepole" className="imgPepole"/>
     </div>
     <div className="col-md-6 col-sm-12 ">
