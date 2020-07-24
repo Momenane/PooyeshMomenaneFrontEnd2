@@ -20,7 +20,7 @@ const MainBannerNav = () => {
           <h2 className="logoName ">{mainBanner.logoname}</h2>
         </li>
         <li
-          className="col-md-6 col-sm-12 mt-3   justify-content-center d-flex"
+          className="col-md-6 col-sm-12 mt-3   justify-content-center d-flex flex-column flex-md-row "
           style={{ listStyle: "none" }}
         >
           <div className="mainBannerSearch">
@@ -29,6 +29,9 @@ const MainBannerNav = () => {
           </div>
           <Link className="mainBannerSignup" to="/signup">
             ثبت نام
+          </Link>
+          <Link className="mainBannerlogin" to="/login">
+           ورود
           </Link>
         </li>
       </ul>
