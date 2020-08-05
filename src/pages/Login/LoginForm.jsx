@@ -22,9 +22,9 @@ const LoginForm = (props) => {
     <div className="col-md-8 col-sm-12  m-0 p-1">
       <InputForm
         onChange={props.onChange}
-        placeholder="کد ملی"
-        name="loginZipCode"
-        value={props.loginZipCode}
+        placeholder=" نام کاربری"
+        name="loginUser"
+        value={props.loginUser}
       />
     </div>
     <div className="col-md-8 col-sm-12  m-0 p-1">

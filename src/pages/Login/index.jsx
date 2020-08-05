@@ -11,13 +11,13 @@ import './index.css'
 
 
 export default (props) => {
-  const [loginZipCode,setLoginZipCode] = useState("")
+  const [loginUser,setLoginUser] = useState("")
   const [loginPassword, setLoginPassword] = useState("")
  
   const onChangeHandler = (event) => {
     const { name, value } = event.target;
-    if (name === "loginZipCode") {
-      setLoginZipCode(value);
+    if (name === "loginUser") {
+      setLoginUser(value);
     } else {
       setLoginPassword(value)
     }
@@ -27,7 +27,7 @@ export default (props) => {
   const doSubmit = async () => {
 
     const bodyData= {
-      username: loginZipCode,
+      username: loginUser,
       password: loginPassword,
     }
 
@@ -56,7 +56,7 @@ const handleSubmit = (e) => {
     <div className="row signContainer m-0 p-0" >
       <div className="col-md-6 col-12">
       <LoginForm
-        loginZipCode={loginZipCode}
+        loginUser={loginUser}
         loginPassword={loginPassword}
         onChange={onChangeHandler}
         onSubmit={handleSubmit}
